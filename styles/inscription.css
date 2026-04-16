@@ -1,0 +1,315 @@
+body {
+  background: linear-gradient(150deg, #000000 25%, #8a2900 50%, #000000 25%);
+  background-attachment: fixed;
+  margin: 0;
+  font-family: var(--font-inter);
+}
+/*
+ * ================================================================
+ * Partie     : BARR de navigation
+ * Ajouté le  : 2026-04-11
+ * À          : 10h:40mn.32s
+ * Remarques  : css appliquer a la barre de naviguation nottanment le logo et le menue
+ *================================================================
+ */
+.logo {
+  overflow: hidden;
+  border: solid 2px;
+  color: #f65e1c;
+  padding: 2px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: bounce 6s ease infinite;
+  background: aliceblue;
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  border: solid 2px;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav > ul {
+  list-style: none;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+nav > ul > li {
+  border: solid 2px;
+  text-decoration: none;
+  padding: 0.5rem;
+  min-width: 8svw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #f65e1c;
+  background: #2e2e2e;
+}
+nav > ul > li:hover {
+  background: linear-gradient(280deg, #ffae00, #f65e1c 50%);
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: aliceblue;
+  white-space: nowrap;
+}
+/*
+ * ================================================================
+ * Partie     : css appliquer a la partie responsif de la barre de navigation
+ * Ajouté le  : 2026-04-11
+ * À          : 10h:54mn.32s
+ * Remarques  :
+ * ================================================================
+ */
+@media (max-width: 1400px) {
+  nav > ul {
+    width: 100%;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 780px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  nav > ul {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+  }
+  nav > ul > li {
+    width: 7svw;
+  }
+}
+/*
+ * ================================================================
+ * Partie     :
+ * Ajouté le  : 2026-04-15
+ * À          : 17h:57mn.17s
+ * Remarques  :
+ * ================================================================
+ */
+h1 {
+  color: aliceblue;
+  margin-top: 15svh;
+  display: flex;
+  justify-content: center;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section > div {
+  display: flex;
+  align-items: stretch;
+  align-items: center;
+  border-radius: 10px;
+  width: 50%;
+  overflow: hidden;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(#212121), linear-gradient(135deg, #000000, #f65e1c);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+section > div > .ligne-plaque-agauche {
+  border: 3px #f65e1c solid;
+  height: 70svh;
+}
+section > div > .conteneur-du-formulaire {
+  height: 66svh;
+  width: 96%;
+  background: #212121;
+}
+section > div > div > .formulaire {
+  height: 100%;
+  width: 100%;
+}
+section > div > div > .formulaire > .grid1 {
+  height: 10svh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+section > div > div > .formulaire > .grid1 > div {
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+section > div > div > .formulaire > .grid1 > div > input {
+  background: #525151;
+  border: none;
+  padding: 0.5rem;
+  height: 3.5svh;
+  border-radius: 10px;
+}
+section > div > div > .formulaire > .grid2 {
+  height: 10svh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  color: #ffffff;
+}
+section > div > div > .formulaire > .grid2 > div {
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+section > div > div > .formulaire > .grid2 > div > input {
+  background: #525151;
+  border: none;
+  padding: 0.5rem;
+  height: 3.5svh;
+  border-radius: 10px;
+}
+section > div > div > .formulaire > .grid3 > div {
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+section > div > div > .formulaire > .grid3 {
+  height: 10svh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  color: #ffffff;
+}
+section > div > div > .formulaire > .grid3 > div > select {
+  background: #525151;
+  border: none;
+
+  padding: 0.5rem;
+  height: 6svh;
+  border-radius: 10px;
+}
+section > div > div > .formulaire > .texarea {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  overflow: hidden;
+}
+section > div > div > .formulaire > .grid3 > div > select > option {
+  color: #ffffff;
+}
+section > div > div > .formulaire > .grid3 > div > label {
+  color: aliceblue;
+}
+section > div > div > .formulaire > div > label {
+  color: #ffffff;
+}
+section > div > div > .formulaire > div > textarea {
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background: #525151;
+  min-height: 20svh;
+  min-width: 46svw;
+  max-height: 20svh;
+  max-width: 46svw;
+  resize: none;
+  overflow: auto;
+}
+section > div > div > .formulaire > div > button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 30%;
+  border-radius: 10px;
+  border: none;
+  border: 1.5px solid transparent;
+  background-image:
+    linear-gradient(#212121), linear-gradient(135deg, #f65e1c, #ad9100);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 1rem;
+  color: aliceblue;
+}
+section > div > div > .formulaire > .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section > div > div > .formulaire > .button > button:hover {
+  background: linear-gradient(135deg, #000000 50%, #c3a200);
+}
+section > .conteneure-du-contact {
+  height: 20svh;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.25rem;
+}
+section > .conteneure-du-contact > div {
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.dive-supplementaire-pour-une-espacement-propre-en-dessous-de-la-section-carte {
+  height: 10svh;
+}
+section > div > div > .conteneure-pour-les-icon {
+  padding: 1rem;
+  min-height: 20px;
+  min-width: 20px;
+  background: #333333;
+  border-radius: 5px;
+}
+section > div > div > .conteneure-pour-les-icon:hover {
+  background: #f65e1c;
+}
+section > div > div > .conteneure-pour-les-icon > .icon {
+  color: #f65e1c;
+  height: 100%;
+  width: 100%;
+}
+section > div > div > .conteneure-pour-les-icon > .icon:hover {
+  color: #ffffff;
+}
+section > .conteneure-du-contact > div > h4 {
+  color: #ffffff;
+  margin: 0;
+}
+section > .conteneure-du-contact > div > h5 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+section > .conteneure-du-contact > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

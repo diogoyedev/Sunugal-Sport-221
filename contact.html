@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--
+ * ================================================================
+ * Section    : Page Contact
+ * Fichier    : contact.html
+ * Créé le    : 2026-04-16
+ * Description: page de contact de Sunugal Sport 221
+ * ================================================================
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sunugal Sport 221</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="styles/variable-animation.css">
+  <link rel="stylesheet" href="styles/page-aceuille.css">
+  <link rel="stylesheet" href="styles/page-contact.css">
+</head>
+
+<body>
+
+  <!--
+   * ================================================================
+   * Partie     : barre de navigation
+   * ================================================================
+  -->
+  <nav>
+    <div class="logo">
+      <img src="/images/logo.png" alt="logo sunugal 221">
+    </div>
+    <ul>
+      <li><a href="/index.html"><i icon="home"></i>Accueil</a></li>
+      <li><a href="/coaches.html"><i icon="account-tie"></i>Nos coachs</a></li>
+      <li><a href="/programme.html"><i icon="calendar-text"></i>Programme</a></li>
+      <li><a href="/tarifs.html"><i icon="cash"></i>Tarifs</a></li>
+      <li><a href="/inscription.html"><i icon="account-plus"></i>Inscription</a></li>
+      <li class="nav-actif"><a href="/contact.html"><i icon="message-text"></i>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--
+   * ================================================================
+   * Partie     : hero contact
+   * ================================================================
+  -->
+  <section class="hero-contact">
+    <div class="hero-contact-texte">
+      <h1>Contactez-<span>nous</span></h1>
+      <p>Une question, une demande d'info ou envie de nous rejoindre ?<br>
+        Notre équipe vous répond dans les plus brefs délais.</p>
+    </div>
+  </section>
+
+  <!--
+   * ================================================================
+   * Partie     : section principale contact
+   * ================================================================
+  -->
+  <section class="section-contact">
+
+    <!-- Bloc informations -->
+    <div class="bloc-infos-contact">
+      <h2>Nos <span>informations</span></h2>
+
+      <div class="info-item">
+        <i class="coloration-icon" icon="localisation"></i>
+        <div>
+          <h4>Adresse</h4>
+          <p>Dakar, Sénégal — Quartier Almadies</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="coloration-icon"  icon="telephone"></i>
+        <div>
+          <h4>Téléphone</h4>
+          <p>+221 77 000 00 00</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="coloration-icon"  icon="email"></i>
+        <div>
+          <h4>Email</h4>
+          <p>contact@sunugalsport221.sn</p>
+        </div>
+      </div>
+
+      <div  class="info-item">
+        <i class="coloration-icon"  icon="alarm"></i>
+        <div>
+          <h4>Horaires</h4>
+          <p>Lun – Ven : 06h00 – 22h00<br>
+             Sam – Dim : 08h00 – 18h00</p>
+        </div>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="contact-reseaux">
+        <span>Suivez-nous :</span>
+        <div class="contact-icones-reseaux">
+          <a href="#"><i class="icon-des-site-des-icon" icon="logo-facebook"></i></a>
+          <a href="#"><i class="icon-des-site-des-icon" icon="linkedin-icon"></i></a>
+          <a href="#"><i class="icon-des-site-des-icon" icon="instagram-icon"></i></a>
+          <a href="#"><i class="icon-des-site-des-icon" icon="twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="bloc-formulaire-contact">
+      <h2>Envoyez-nous un <span>message</span></h2>
+
+      <div class="champ-contact">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" placeholder="Ex : Fatima Diallo">
+      </div>
+
+      <div class="champ-contact">
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" placeholder="votre@email.com">
+      </div>
+
+      <div class="champ-contact">
+        <label for="sujet">Sujet</label>
+        <input type="text" id="sujet" placeholder="Ex : Demande d'information abonnement">
+      </div>
+
+      <div class="champ-contact">
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" placeholder="Écrivez votre message ici..."></textarea>
+      </div>
+
+      <button class="btn-envoyer">
+        <i icon="message-star-outline"></i>
+        Envoyer le message
+      </button>
+    </div>
+
+  </section>
+
+  <!--
+   * ================================================================
+   * Partie     : footer (reprise du footer de index.html)
+   * ================================================================
+  -->
+  <footer>
+    <div class="ligne-orange-du-footer"></div>
+    <div class="conteneure-du-text">
+      <div class="conteneur-du-logodu-footer">
+        <div class="logo-du-footer">
+          <img src="/images/logo.png" alt="">
+        </div>
+        <h2>SUNUGAL <br>
+          <span class="coloriage-du-text-sport-221">SPORT 221</span>
+        </h2>
+        <span class="expression-en-dessou-du-logo-dans-le-footer">"L'excellence physique au coeur de la Teranga."</span>
+      </div>
+      <div class="conteneur-lien-rapide">
+        <ul>
+          <li class="lien-rapide-a-centrer-titre">LIENS RAPIDES</li>
+          <li><a class="lien-rapide-a-centrer" href="/tarifs.html">Abonnements</a></li>
+          <li><a class="lien-rapide-a-centrer" href="/coaches.html">Coachs</a></li>
+          <li><a class="lien-rapide-a-centrer" href="/programme.html">Planning</a></li>
+          <li><a class="lien-rapide-a-centrer" href="#">Blog</a></li>
+          <li><a class="lien-rapide-a-centrer" href="/inscription.html">S'inscrire</a></li>
+        </ul>
+      </div>
+      <div class="conteneur-suivez-nous">
+        <span class="suivez-nous-titre">suivez nous sur:</span>
+        <span class="logo-des-resaux-sociau-active-de-lentreprise">
+          <a href="#"><i class="icon-des-site-des-icon" icon="logo-facebook"></i></a>
+          <a href="#"><i class="icon-des-site-des-icon" icon="linkedin-icon"></i></a>
+          <a href="#"><i class="icon-des-site-des-icon" icon="instagram-icon"></i></a>
+          <a href="#"><i class="icon-des-site-des-icon" icon="twitter"></i></a>
+        </span>
+        <div class="conteneur-rejoignez-nos-newslater">
+          <span class="rejoignez-newslaters">Rejoinez nos
+            <span class="coloration-de-newslater">newslaters !</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="ligne-orange-du-footer"></div>
+    <div class="tout-droit-reserver">
+      <span><i icon="copyright"></i>2024 SUNUGAL SPORT 221. ALL RIGHTS RESERVED.</span>
+    </div>
+  </footer>
+
+  <script src="/icons/icon-loader.js"></script>
+</body>
+
+</html>

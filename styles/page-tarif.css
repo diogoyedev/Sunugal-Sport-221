@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(180deg, #000000 50%, #8f2b00e3);
+}
+.conteneur-pricipale-de-la-section-tarifs {
+  height: 80svh;
+  margin: 0;
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.conteneur-pricipale-de-la-section-tarifs > div {
+  border: solid aliceblue 1px;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+  background-image:
+    linear-gradient(#212121), linear-gradient(135deg, #f65e1c, #ad9100);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 1rem;
+  color: aliceblue;
+}
+.conteneur-pricipale-de-la-section-tarifs > div:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > h5 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > h3 {
+  margin: 0;
+  font-weight: 400;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.conteneur-pricipale-de-la-section-tarifs
+  > div
+  > ul
+  > li
+  > .coloration-de-icone {
+  color: #f65e1c;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > h1 > .cfa-par-moi {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > h5 {
+  border: #f65e1c 1px solid;
+  padding: 0.5rem;
+  width: 8svw;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f65e1c 20%, #ffd502);
+}
+.conteneur-pricipale-de-la-section-tarifs > div > button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 18svh;
+  transform: translateX(7svw);
+  border-color: #f65e1c;
+  background: #000000;
+  color: aliceblue;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > .boutton-droite {
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 13svh;
+  transform: translateX(7svw);
+  border-color: #f65e1c;
+  background: #000000;
+  color: aliceblue;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > button:hover {
+  background: linear-gradient(135deg, #000000 20%, #c3a200);
+}
+.conteneur-pricipale-de-la-section-tarifs
+  > div
+  > .personnaliser-Engagement-Performance {
+  border: #f65e1c 1px solid;
+  padding: 0.5rem;
+  width: 14svw;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f65e1c 10%, #000000);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.conteneur-pricipale-de-la-section-tarifs > div > .anuell-personnalise {
+  border: #f65e1c 1px solid;
+  padding: 0.5rem;
+  width: 10svw;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f65e1c 20%, #3d7900);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

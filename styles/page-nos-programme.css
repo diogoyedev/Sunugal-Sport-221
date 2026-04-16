@@ -1,0 +1,145 @@
+/*
+ * ================================================================
+ * Partie     : css appliquer a la page nos programmes
+ * Ajouté le  : 2026-04-13
+ * À          : 16h:47mn.18s
+ * Remarques  : ce ce commentaire a ete mis un peut tard
+ * ainsi nous voila a la partie nos programme
+ * ================================================================
+ */
+.conteneure-principale-nos-programmes {
+  margin: 0;
+  height: 95svh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9svh;
+  background-image: url(/images/salle-de-221-sport.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(0.5px);
+  filter: brightness(90%);
+}
+.conteneu-veritable-nos-programes-header {
+  width: 90%;
+  padding: 0 1rem;
+  height: 100%;
+  white-space: pre-line;
+}
+.titre-nos-nos-programme {
+  font-size: 3rem;
+  color: aliceblue;
+  font-weight: 800;
+}
+.description-de-la-page-acceuille-nos-programmes {
+  width: 70%;
+  font-weight: 500;
+}
+.coloriage-de-nos-programmes {
+  color: #f65e1c;
+}
+.conteneu-veritable-nos-programes-header p {
+  color: aliceblue;
+  font-size: 2rem;
+}
+.boutton-voire-plus-de-la-page-dacceuille {
+  border: none;
+  padding: 0.5rem;
+  background: linear-gradient(280deg, #f65e1c 50%, #ffae00);
+  font-size: 2rem;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: 600;
+  width: 15svw;
+}
+.boutton-voire-plus-de-la-page-dacceuille:hover {
+  background-image: linear-gradient(135deg, #f65e1c 50%, #ffd500);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transform: translateX(2px);
+}
+/*
+ * ================================================================
+ * Partie     : titre nos programme
+ * Ajouté le  : 2026-04-13
+ * À          : 1h:08mn.47s
+ * Remarques  :
+ * ================================================================
+ */
+.page-nos-programme {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 3rem;
+  margin-top: 10svh;
+}
+.carte-de-nos-programmes {
+  margin: 0;
+  height: 160svh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 6rem;
+}
+.carte-de-nos-programmes > div {
+  border: 3px #612911 solid;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: pre-line;
+  background: #1d1d1d;
+}
+.carte-de-nos-programmes > div > img {
+  width: 100%;
+  height: 50%;
+}
+.carte-de-nos-programmes > div > .titre-des-cartes {
+  color: rgb(225, 88, 29);
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.carte-de-nos-programmes > div > div > .paragraphe-des-cartes {
+  color: aliceblue;
+  font-size: 500;
+  font-size: 1.1rem;
+}
+.carte-de-nos-programmes > div > div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.carte-de-nos-programmes > div:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+.carte-de-nos-programmes > div > div > button {
+  background: #f65e1c;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.carte-de-nos-programmes > div > div > button:hover {
+  transform: translateY(2px);
+  border-radius: 5px;
+  border: 3px solid transparent;
+  background-image:
+    linear-gradient(#f65e1c), linear-gradient(135deg, #f65e1c, #ffd500);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.dive-supplementaire-pour-une-espacement-propre-en-dessous-de-la-section-carte {
+  height: 15svh;
+}
+.etoiles-dans-les-cartes {
+  color: rgb(255, 213, 0);
+}
+.etoiles-dans-les-cartes:hover {
+  transform: translateX(2px);
+}

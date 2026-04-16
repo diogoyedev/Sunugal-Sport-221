@@ -1,0 +1,313 @@
+/*
+ * ================================================================
+ * Partie     : page contact
+ * Fichier    : page-contact.css
+ * Créé le    : 2026-04-16
+ * Description: styles de la page contact de Sunugal Sport 221
+ * ================================================================
+ */
+
+/*
+ * ================================================================
+ * Partie     : hero contact
+ * ================================================================
+ */
+.hero-contact {
+  margin-top: 9svh;
+  height: 35svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/salle-de-sport-221-acceuille.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(85%);
+  box-shadow:
+    0 0 5px #ff7900,
+    0 0 10px #ff790044,
+    0 0 20px #ff790022;
+}
+
+.hero-contact-texte {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-contact-texte h1 {
+  font-size: 3rem;
+  color: aliceblue;
+  margin: 0 0 0.5rem 0;
+}
+
+.hero-contact-texte h1 span {
+  color: #f65e1c;
+}
+
+.hero-contact-texte p {
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/*
+ * ================================================================
+ * Partie     : section principale contact (deux colonnes)
+ * ================================================================
+ */
+.section-contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 4rem;
+  margin-top: 2rem;
+}
+
+/*
+ * ================================================================
+ * Partie     : bloc infos contact (colonne gauche)
+ * ================================================================
+ */
+.bloc-infos-contact {
+  width: 42%;
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1.5px solid #f65e1c33;
+}
+
+.bloc-infos-contact h2 {
+  color: aliceblue;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.bloc-infos-contact h2 span {
+  color: #f65e1c;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-item i {
+  font-size: 2rem;
+  color: #f65e1c;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.info-item h4 {
+  color: #f65e1c;
+  margin: 0 0 0.2rem 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-item p {
+  color: aliceblue;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-reseaux {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-reseaux span {
+  color: aliceblue;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-icones-reseaux {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-icones-reseaux .icon-des-site-des-icon {
+  font-size: 2rem;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.contact-icones-reseaux a:hover .icon-des-site-des-icon {
+  color: #f65e1c;
+}
+
+/*
+ * ================================================================
+ * Partie     : bloc formulaire (colonne droite)
+ * ================================================================
+ */
+.bloc-formulaire-contact {
+  width: 52%;
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 1.5px solid #f65e1c33;
+}
+
+.bloc-formulaire-contact h2 {
+  color: aliceblue;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.bloc-formulaire-contact h2 span {
+  color: #f65e1c;
+}
+
+.champ-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.champ-contact label {
+  color: #cccccc;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.champ-contact input,
+.champ-contact textarea {
+  background: #2a2a2a;
+  border: 1.5px solid #3a3a3a;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  color: aliceblue;
+  font-size: 1rem;
+  font-family: var(--font-inter);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.champ-contact input:focus,
+.champ-contact textarea:focus {
+  border-color: #f65e1c;
+  box-shadow: 0 0 8px #f65e1c44;
+}
+
+.champ-contact input::placeholder,
+.champ-contact textarea::placeholder {
+  color: #666666;
+}
+
+.btn-envoyer {
+  margin-top: 0.5rem;
+  padding: 0.9rem 2rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: linear-gradient(280deg, #ffae00, #f65e1c 50%);
+  color: aliceblue;
+  font-weight: 700;
+  font-family: var(--font-inter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  align-self: flex-end;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+
+.btn-envoyer:hover {
+  background: #1f1f1f;
+  box-shadow:
+    0 0 10px #ff7900,
+    0 0 20px #ff790044,
+    0 0 30px #ff790022;
+  transform: translateY(2px);
+}
+
+.btn-envoyer i {
+  font-size: 1.4rem;
+}
+
+/*
+ * ================================================================
+ * Partie     : lien actif dans la nav (page courante)
+ * ================================================================
+ */
+.nav-actif {
+  background: linear-gradient(280deg, #ffae00, #f65e1c 50%) !important;
+}
+
+/*
+ * ================================================================
+ * Partie     : RESPONSIF TABLETTE (max-width: 900px)
+ * ================================================================
+ */
+@media (max-width: 900px) {
+  .hero-contact {
+    height: 25svh;
+    margin-top: 14svh;
+  }
+  .hero-contact-texte h1 {
+    font-size: 2rem;
+  }
+  .hero-contact-texte p {
+    font-size: 1rem;
+  }
+
+  .section-contact {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  .bloc-infos-contact,
+  .bloc-formulaire-contact {
+    width: 100%;
+  }
+}
+
+/*
+ * ================================================================
+ * Partie     : RESPONSIF TELEPHONE (max-width: 480px)
+ * ================================================================
+ */
+@media (max-width: 480px) {
+  .hero-contact {
+    height: 22svh;
+    margin-top: 20svh;
+  }
+  .hero-contact-texte h1 {
+    font-size: 1.5rem;
+  }
+  .hero-contact-texte p {
+    font-size: 0.9rem;
+  }
+
+  .section-contact {
+    padding: 1.5rem 0.8rem;
+  }
+  .bloc-infos-contact,
+  .bloc-formulaire-contact {
+    padding: 1.2rem;
+  }
+  .bloc-infos-contact h2,
+  .bloc-formulaire-contact h2 {
+    font-size: 1.4rem;
+  }
+  .btn-envoyer {
+    font-size: 1rem;
+    align-self: stretch;
+  }
+}
+.coloration-icon{
+  color: #f65e1c;
+}

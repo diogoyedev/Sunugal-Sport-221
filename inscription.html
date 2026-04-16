@@ -1,0 +1,180 @@
+<!--
+ * ============================================================
+ * Partie     : nous voila a la page inscription cette page concerne le formulaire d iscription
+ * Ajouté le  : 2026-04-15
+ * À          : 15h:42mn.25s
+ * Description:
+ *
+ * Remarques  :
+ *
+ * ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!--
+ * ================================================================
+ * Partie     : metadonnes
+ * Ajouté le  : 2026-04-15
+ * À          : 15h:57mn.52s
+ * Remarques  :
+ * ================================================================
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles/inscription.css">
+</head>
+
+<body>
+  <!--
+ * ================================================================
+ * Partie     :
+ * Ajouté le  : 2026-04-15
+ * À          : 16h:26mn.46s
+ * Remarques  :
+ * ================================================================
+-->
+  <nav>
+    <div class="logo">
+      <img src="/images/logo.png" alt="logo sunugal 221">
+    </div>
+    <ul>
+      <li><a href="/index.html"><i icon="home"></i>Accueil</a></li>
+      <li><a href="/coaches.html"><i icon="account-tie"></i>Nos coachs</a></li>
+      <li> <a href="/programme.html"><i icon="calendar-text"></i>Programme</a></li>
+      <li><a href="/tarifs.html"><i icon="cash"></i>Tarifs</a></li>
+      <li><a href="/inscription.html"><i icon="account-plus"></i>Inscription</a></li>
+      <li><a href="/contact.html"><i icon="message-text"></i>Contact</a></li>
+    </ul>
+  </nav>
+  <!--
+ * ================================================================
+ * Partie     : grid1 prenon et nom
+ * Ajouté le  : 2026-04-15
+ * À          : 16h:53mn.24s
+ * Remarques  : cette partie du formulaire
+ * concerne
+ * ================================================================
+-->
+  <h1><i icon="account-box-plus-outline"></i>Inscription </h1>
+  <section>
+    <div>
+      <div class="ligne-plaque-agauche"></div>
+      <div class="conteneur-du-formulaire">
+        <form class="formulaire" action="">
+          <div class="grid1">
+            <div>
+              <label for="nom">NOM</label>
+              <input type="text" placeholder="Mettez votre nom ici">
+            </div>
+            <div>
+              <label for="prenom">Prénom</label>
+              <input type="text" placeholder="Mettez votre prenom ici">
+            </div>
+          </div>
+          <!--
+ * ================================================================
+ * Partie     : partie email et telephone
+ * Ajouté le  : 2026-04-15
+ * À          : 19h:54mn.12s
+ * Remarques  :
+ * ================================================================
+-->
+
+
+          <div class="grid2">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" placeholder="Mettez votre email ici">
+            </div>
+            <div>
+              <label for="tel">Telephone</label>
+              <input type="tel" placeholder="Mettez votre numero de telephone ici">
+            </div>
+          </div>
+          <!--
+ * ================================================================
+ * Partie     :
+ * Ajouté le  : 2026-04-15
+ * À          : 20h:35mn.43s
+ * Remarques  :
+ * ================================================================
+-->
+          <div class="grid3">
+            <div>
+              <label for="programme">Programme souhaité</label>
+              <select id="programme">
+                <option value="">Choisissez un programme</option>
+                <option value="muscu">Musculation</option>
+                <option value="cardio">Cardio</option>
+                <option value="crossfit">CrossFit</option>
+                <option value="yoga">Yoga</option>
+              </select>
+            </div>
+          </div>
+          <!--
+ * ================================================================
+ * Partie     : texarea
+ * Ajouté le  : 2026-04-15
+ * À          : 22h:26mn.4s
+ * Remarques  : cette ùpartie concerne la partie messages
+ * ================================================================
+-->
+          <div class="texarea">
+            <label for="text">Message (Optionnel)</label>
+            <textarea name="message-text" id="" placeholder="Mettez ici votre message"></textarea>
+          </div>
+          <div class="button">
+            <button>Envoyer ma demande</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--
+ * ================================================================
+ * Partie     : section contact
+ * Ajouté le  : 2026-04-16
+ * À          : 9h:20mn.1s
+ * Remarques  :
+ * ================================================================
+-->
+  <section class="contact">
+    <div class="conteneure-du-contact">
+      <div>
+        <div class="conteneure-pour-les-icon">
+          <i class="icon" icon="localisation"></i>
+        </div>
+        <h4>Adresse</h4>
+        <h5>Almadies, Dakar</h5>
+        <h5>Sénégal</h5>
+      </div>
+      <div>
+        <div class="conteneure-pour-les-icon">
+          <i class="icon" icon="telephone"></i>
+        </div>
+        <h4>Appelez-nous</h4>
+        <h5>+221 33 800 00 00</h5>
+        <h5>Lun - Sam: 6:00 - 22:00</h5>
+      </div>
+      <div>
+        <div class="conteneure-pour-les-icon">
+          <i class="icon" icon="email"></i>
+        </div>
+        <h4>Support</h4>
+        <h5>contact@sunugalsport.sn</h5>
+        <h5>24/7 Response Time</h5>
+      </div>
+    </div>
+  </section>
+  <div class="dive-supplementaire-pour-une-espacement-propre-en-dessous-de-la-section-carte"></div>
+  <script src="/icons/icon-loader.js">
+  </script>
+</body>
+
+</html>

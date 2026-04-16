@@ -1,0 +1,211 @@
+.page-nos-programme {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 3rem;
+  margin-top: 15svh;
+  gap: 1rem;
+}
+.coloration-de-nos-coaches {
+  color: #f65e1c;
+}
+.carte-de-nos-programmes {
+  margin: 0;
+  height: 160svh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 6rem;
+}
+@media (max-width: 780px) {
+  .carte-de-nos-programmes {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+}
+.carte-de-nos-programmes > div {
+  border: 3px #612911 solid;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: pre-line;
+  background: #20201f;
+}
+.carte-de-nos-programmes > div:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+.carte-de-nos-programmes > div > img {
+  width: 100%;
+  height: 50%;
+}
+.carte-de-nos-programmes > div > .titre-des-cartes {
+  color: #f65e1c;
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.carte-de-nos-programmes > div > div > .paragraphe-des-cartes {
+  color: aliceblue;
+  font-size: 500;
+  font-size: 1.1rem;
+}
+.carte-de-nos-programmes > div > div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.carte-de-nos-programmes > div > div > button {
+  background: #f65e1c;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.carte-de-nos-programmes > div > div > button:hover {
+  transform: translateY(2px);
+  border: 3px solid transparent;
+  background-image:
+    linear-gradient(#f65e1c), linear-gradient(135deg, #f65e1c, #ffd500);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.dive-supplementaire-pour-une-espacement-propre-en-dessous-de-la-section-carte {
+  height: 10svh;
+}
+.states {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.states > h1 {
+  color: aliceblue;
+}
+.states > .meta-donnes-de-stat {
+  border: #f65e1c 1px solid;
+  height: 15svh;
+  width: 86%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #1a1a19;
+}
+.states > .meta-donnes-de-stat > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.meta-donnes-de-stat > div > h1 {
+  margin: 0;
+  color: #f65e1c;
+}
+.meta-donnes-de-stat > div > h6 {
+  color: #e2e1e1;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.commentaire-pour-nos-coache {
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  min-height: 300px;
+  margin-top: 5svh;
+}
+
+.commentaire-pour-nos-coache > div {
+  display: flex;
+  align-items: stretch;
+  background: #20201f;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #444;
+  min-height: 250px;
+}
+.conteneure-principal-des-commentaire:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  box-shadow: 0 5px 15px -2px rgba(246, 94, 28, 0.66);
+}
+.ligne-orange-du-commentaire {
+  width: 3px;
+  background: #f65e1c;
+  flex-shrink: 0;
+}
+.conteneur-des-commentaire {
+  flex: 1;
+  padding: 1.5rem;
+  background: #272727;
+  color: white;
+  display: block;
+  min-height: 200px;
+}
+.coloration-de-etoiles-commentaire {
+  color: #f65e1c;
+  display: block;
+  font-size: 0.8rem;
+}
+.conteneur-des-commentaire > h4 {
+  font-weight: 400;
+  font-style: italic;
+}
+.profile-du-client-qui-a-poster-le-commentaire {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border: aliceblue 1px solid;
+  height: 14svh;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  background-image:
+    linear-gradient(#151515), linear-gradient(135deg, #f65e1c, #ffd500);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  gap: 1rem;
+}
+.titre-du-commentaire {
+  margin-top: 10svh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 42svw;
+  font-weight: 600;
+}
+.titre-du-commentaire > span {
+  color: #f65e1c;
+}
+.photo-de-profil-du-commentaire {
+  border: aliceblue 1px solid;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border-color: #4d4d4d;
+  overflow: hidden;
+}
+.photo-de-profil-du-commentaire > img {
+  width: 100%;
+  height: 100%;
+}
+.noms-du-profil-commentaire {
+  padding: 0.3rem;
+  gap: 1rem;
+}
+.noms-du-profil-commentaire > h1 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.noms-du-profil-commentaire > h4 {
+  margin: 0;
+  color: #f65e1c;
+  font-weight: 300;
+}
