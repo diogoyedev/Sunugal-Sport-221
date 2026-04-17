@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(180deg, #000000 50%, #8f2b00e3);
+  font-family: var(--font-inter);
 }
 .conteneur-pricipale-de-la-section-tarifs {
   height: 80svh;
@@ -107,4 +108,3 @@ body {
   display: flex;
   justify-content: center;
 }
-
