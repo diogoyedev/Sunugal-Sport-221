@@ -455,6 +455,9 @@ footer {
   padding-left: 0.5rem;
   color: #ffffff;
 }
+.s-inscrire > button:hover{
+  transform: translate(2px);
+}
 .s-inscrire > button {
   height: 6svh;
   background: #f65e1c;
