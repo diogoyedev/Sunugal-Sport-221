@@ -6,12 +6,19 @@
  * Description: styles de la page contact de Sunugal Sport 221
  * ================================================================
  */
-
+.section-contact > .bloc-infos-contact > .info-item > .coloration-icon {
+  color: #f65e1c;
+}
 /*
  * ================================================================
  * Partie     : hero contact
+ * Ajouté le  : 2026-04-16
+ * À          : 17h:36mn.48s
+ * Remarques  :
  * ================================================================
  */
+
+
 .hero-contact {
   margin-top: 9svh;
   height: 35svh;
@@ -52,8 +59,13 @@
 /*
  * ================================================================
  * Partie     : section principale contact (deux colonnes)
+ * Ajouté le  : 2026-04-16
+ * À          : 17h:36mn.24s
+ * Remarques  :
  * ================================================================
  */
+
+
 .section-contact {
   display: flex;
   justify-content: space-between;
@@ -65,8 +77,13 @@
 /*
  * ================================================================
  * Partie     : bloc infos contact (colonne gauche)
+ * Ajouté le  : 2026-04-16
+ * À          : 17h:35mn.59s
+ * Remarques  :
  * ================================================================
  */
+
+
 .bloc-infos-contact {
   width: 42%;
   background: #1e1e1e;
@@ -214,7 +231,7 @@
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
-  background: linear-gradient(280deg, #ffae00, #f65e1c 50%);
+  background: linear-gradient(280deg,#f65e1c 50%, #ffae00);
   color: aliceblue;
   font-weight: 700;
   font-family: var(--font-inter);
@@ -246,68 +263,4 @@
  */
 .nav-actif {
   background: linear-gradient(280deg, #ffae00, #f65e1c 50%) !important;
-}
-
-/*
- * ================================================================
- * Partie     : RESPONSIF TABLETTE (max-width: 900px)
- * ================================================================
- */
-@media (max-width: 900px) {
-  .hero-contact {
-    height: 25svh;
-    margin-top: 14svh;
-  }
-  .hero-contact-texte h1 {
-    font-size: 2rem;
-  }
-  .hero-contact-texte p {
-    font-size: 1rem;
-  }
-
-  .section-contact {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-  }
-  .bloc-infos-contact,
-  .bloc-formulaire-contact {
-    width: 100%;
-  }
-}
-
-/*
- * ================================================================
- * Partie     : RESPONSIF TELEPHONE (max-width: 480px)
- * ================================================================
- */
-@media (max-width: 480px) {
-  .hero-contact {
-    height: 22svh;
-    margin-top: 20svh;
-  }
-  .hero-contact-texte h1 {
-    font-size: 1.5rem;
-  }
-  .hero-contact-texte p {
-    font-size: 0.9rem;
-  }
-
-  .section-contact {
-    padding: 1.5rem 0.8rem;
-  }
-  .bloc-infos-contact,
-  .bloc-formulaire-contact {
-    padding: 1.2rem;
-  }
-  .bloc-infos-contact h2,
-  .bloc-formulaire-contact h2 {
-    font-size: 1.4rem;
-  }
-  .btn-envoyer {
-    font-size: 1rem;
-    align-self: stretch;
-  }
-}
-.coloration-icon{
-  color: #f65e1c;
 }

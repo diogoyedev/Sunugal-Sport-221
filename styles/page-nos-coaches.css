@@ -17,12 +17,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 0 6rem;
 }
-@media (max-width: 780px) {
-  .carte-de-nos-programmes {
-    grid-template-columns: repeat(1, 1fr);
-    
-  }
-}
+
 .carte-de-nos-programmes > div {
   border: 3px #612911 solid;
   border-radius: 10px;
