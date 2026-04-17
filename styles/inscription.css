@@ -75,7 +75,31 @@ nav > ul > li > a {
  * À          : 10h:54mn.32s
  * Remarques  :
  * ================================================================
-
+ */
+@media (max-width: 1400px) {
+  nav > ul {
+    width: 100%;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 780px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  nav > ul {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+  }
+  nav > ul > li {
+    width: 7svw;
+  }
+}
 /*
  * ================================================================
  * Partie     :

@@ -87,7 +87,38 @@ nav ul li a {
   color: aliceblue;
   white-space: nowrap;
 }
-
+/*
+ * ================================================================
+ * Partie     : css appliquer a la partie responsif de la barre de navigation
+ * Ajouté le  : 2026-04-11
+ * À          : 10h:54mn.32s
+ * Remarques  :
+ * ================================================================
+ */
+@media (max-width: 1400px) {
+  nav ul {
+    width: 100%;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 780px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  nav ul {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    width: 7svw;
+  }
+}
 /*
  * ================================================================
  * Partie     : Css appliquer a la partie section hero de bienvenue
@@ -241,7 +272,7 @@ section .bienvenue p {
  *meme si ce n est pas vraiment conforme au instruction du projet d auttent plus que si je mettai ajour pour inserer comme convenue je perdrai du temps  je prefaire laisser ainsi meme si c est point en moins
  * ================================================================
  */
-
+/* Style de chaque slide */
 .image-slide {
   position: absolute;
   top: 0;
@@ -278,6 +309,8 @@ section .bienvenue p {
 .image-slide:nth-child(5) {
   animation-delay: 16s;
 }
+
+/* Tu peux définir les images directement dans le HTML ou ici */
 .image-slide:nth-child(1) {
   background-image: url("/images/image-du-slider/slide1.png");
 }
@@ -433,4 +466,195 @@ footer {
 }
 .coloration-de-newslater {
   color: #f65e1c;
+}
+
+/*
+ * ================================================================
+ * Partie     : RESPONSIF TABLETTE (max-width: 900px)
+ * Ajouté le  : 2026-04-16
+ * Remarques  : adaptation tablette pour hero, section pourquoi, footer
+ * ================================================================
+ */
+@media (max-width: 900px) {
+
+  /* --- NAV --- */
+  nav {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  nav ul {
+    width: 100%;
+    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  nav ul li {
+    min-width: unset;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  /* --- HERO --- */
+  .hero-section-bienvenue {
+    height: auto;
+    min-height: 60svh;
+    margin-top: 14svh;
+    padding: 2rem 1rem;
+  }
+  section .bienvenue h1 {
+    font-size: 2rem;
+  }
+  section .bienvenue p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  section .bienvenue h4 {
+    font-size: 1.3rem;
+    width: 60%;
+    padding: 0.5rem;
+  }
+
+  /* --- SECTION POURQUOI --- */
+  .pourquoi-venir-chez-nous {
+    flex-direction: column;
+    height: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .pourquoi-venir-chez-nous > div {
+    width: 100%;
+  }
+  .image-illustration-pourquoi-chez-nous {
+    height: 350px;
+  }
+  .Description h4 {
+    font-size: 1.5rem;
+  }
+  .Description p {
+    font-size: 1.1rem;
+  }
+  .Description button {
+    font-size: 1.1rem;
+    align-self: center;
+    width: 80%;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    height: auto;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .conteneure-du-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .conteneur-du-logodu-footer,
+  .conteneur-lien-rapide,
+  .conteneur-suivez-nous {
+    width: 90%;
+  }
+  .conteneur-du-logodu-footer {
+    align-items: center;
+  }
+  .conteneur-lien-rapide ul {
+    gap: 0.6rem;
+  }
+  .suivez-nous-titre {
+    font-size: 1.8rem;
+  }
+  .icon-des-site-des-icon {
+    font-size: 2.2rem;
+  }
+}
+
+/*
+ * ================================================================
+ * Partie     : RESPONSIF TELEPHONE (max-width: 480px)
+ * Ajouté le  : 2026-04-16
+ * Remarques  : adaptation mobile pour hero, section pourquoi, footer
+ * ================================================================
+ */
+@media (max-width: 480px) {
+
+  /* --- NAV --- */
+  nav ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
+  nav ul li {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.2rem;
+  }
+  nav ul li a {
+    font-size: 0.78rem;
+  }
+
+  /* --- HERO --- */
+  .hero-section-bienvenue {
+    margin-top: 20svh;
+    min-height: 55svh;
+    padding: 1.5rem 0.8rem;
+  }
+  section .bienvenue h1 {
+    font-size: 1.5rem;
+  }
+  section .bienvenue p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  section .bienvenue h4 {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  /* --- SECTION POURQUOI --- */
+  .pourquoi-venir-chez-nous {
+    margin-top: 2rem;
+    padding: 0.8rem;
+  }
+  .Description h4 {
+    font-size: 1.2rem;
+  }
+  .Description p {
+    font-size: 0.95rem;
+  }
+  .Description button {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .image-illustration-pourquoi-chez-nous {
+    height: 260px;
+  }
+
+  /* --- FOOTER --- */
+  .conteneur-du-logodu-footer h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .expression-en-dessou-du-logo-dans-le-footer {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .lien-rapide-a-centrer-titre {
+    font-size: 1.4rem;
+  }
+  .conteneur-lien-rapide ul {
+    font-size: 1.1rem;
+  }
+  .suivez-nous-titre {
+    font-size: 1.4rem;
+  }
+  .icon-des-site-des-icon {
+    font-size: 1.8rem;
+  }
+  .tout-droit-reserver span {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
 }
