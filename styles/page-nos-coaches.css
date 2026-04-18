@@ -1,4 +1,4 @@
-body{
+body {
   font-family: var(--font-inter);
 }
 .page-nos-programme {
@@ -46,6 +46,7 @@ body{
   color: aliceblue;
   font-size: 500;
   font-size: 1.1rem;
+  white-space: pre-line;
 }
 .carte-de-nos-programmes > div > div {
   display: flex;
